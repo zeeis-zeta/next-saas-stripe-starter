@@ -5,8 +5,8 @@ import { footerLinks, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/layout/mode-toggle";
 
-import { NewsletterForm } from "../forms/newsletter-form";
-import { Icons } from "../shared/icons";
+// import { NewsletterForm } from "../forms/newsletter-form";
+// import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -31,17 +31,18 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </ul>
           </div>
         ))}
-        <div className="flex flex-col  items-end md:col-span-2">
+        {/* 订阅邮箱 */}
+        {/* <div className="flex flex-col  items-end md:col-span-2">
           <NewsletterForm />
-        </div>
+        </div> */}
       </div>
-
-      <div className="border-t py-4">
-        <div className="container flex items-center justify-between">
+      {/* 底部栏 */}
+      {/* <div className="border-t py-4"> */}
+        {/* <div className="container flex items-center justify-between"> */}
           {/* <span className="text-muted-foreground text-sm">
             Copyright &copy; 2024. All rights reserved.
           </span> */}
-          <p className="text-left text-sm text-muted-foreground">
+          {/* <p className="text-left text-sm text-muted-foreground">
             Built by{" "}
             <Link
               href={siteConfig.links.twitter}
@@ -83,7 +84,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             <ModeToggle />
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

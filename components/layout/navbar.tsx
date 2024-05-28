@@ -11,6 +11,9 @@ import { Icons } from "../shared/icons";
 import { MainNav } from "./main-nav";
 import { UserAccountNav } from "./user-account-nav";
 
+import { ModeToggle } from "@/components/layout/mode-toggle";
+
+
 interface NavBarProps {
   items?: MainNavItem[];
   children?: React.ReactNode;
@@ -54,7 +57,7 @@ export function NavBar({
               Login Page
             </Link>
           ) : null} */}
-
+          { <ModeToggle/> }
           {session ? (
             <UserAccountNav user={session.user} />
           ) : status === "unauthenticated" ? (

@@ -6,9 +6,9 @@
 export const publicRoutes = [
   "/",
   "/blog",
-  "/docs",
-  "/guides",
-  "/pricing",
+  // "/docs",
+  // "/guides",
+  // "/pricing",
 ];
 
 /**
@@ -17,9 +17,9 @@ export const publicRoutes = [
  * @type {string[]}
  */
 export const authRoutes = [
-  "/login",
-  "/register",
-  "/auth/error",
+  // "/login",
+  // "/register",
+  // "/auth/error",
 ];
 
 /**
